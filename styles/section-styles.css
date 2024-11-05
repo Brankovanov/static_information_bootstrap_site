@@ -1,0 +1,14 @@
+.carousel-wrapper,
+.about-us-wrapper,
+.product-card  {
+  height: 500px;
+}
+
+.text-area-height {
+  height: 200px;
+}
+
+.testimonial,
+.team-member {
+  cursor: pointer;
+}
