@@ -1,3 +1,9 @@
 @import "reset.css";
 @import "bootstrap/css/bootstrap.css";
-@import "section-styles.css";
+@import "products-styles.css";
+@import "carousel-styles.css";
+@import "about-us-styles.css";
+@import "services-styles.css";
+@import "contacts-styles.css";
+@import "testimonials-styles.css";
+@import "our-team-styles.css";

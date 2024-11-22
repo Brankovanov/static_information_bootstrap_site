@@ -1,0 +1,19 @@
+.product-card-height {
+  height: 500px;
+}
+
+.custom-overflow {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.overflow-one-row {
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+}
+
+.overflow-eight-row {
+  line-clamp: 8;
+  -webkit-line-clamp: 8;
+}
