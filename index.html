@@ -4,79 +4,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lorem ipsum</title>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
-<!-- HEADER SECTION -->
+
+<!--HEADER SECTION -->
 <header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top" id="navbar-example2">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-      </div>
+      <a class="navbar-brand"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navigation-side-menu"
+        aria-controls="navigation-side-menu">
+        Navbar
+      </a>
     </div>
   </nav>
 </header>
-<!-- HEADER SECTION -->
+<!--HEADER SECTION -->
+
+<!-- SIDE MENU -->
+<div id="navigation-side-menu"
+  class="offcanvas offcanvas-start"
+  data-bs-scroll="true"
+  tabindex="-1" 
+  aria-labelledby="navigation-side-menu-label">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#about-us">
+          About us
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100  text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#products">
+          Products
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#services">
+          Services
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#our-team">
+          Our team
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#testimonials">
+          Testimonials
+        </a>
+      </li>
+      <li class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#contacts">
+          Contacts
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- SIDE MENU -->
 
 <body class="pb-5">
-  <!-- CAROUSEL SECTION -->
+  <!-- TO DO CAROUSEL SECTION -->
   <div class="container-fluid gx-0">
     <section class="carousel-wrapper">
-      <div id="carouselExampleCaptions" class="carousel slide h-100 bg-body-secondary">
+      <div id="carouselControls" class="carousel slide h-100 bg-body-secondary">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+          <button class="active"
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="0" 
+            aria-current="true"
+            aria-label="Slide 1">
+          </button>
+          <button type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="1"
+            aria-label="Slide 2">
+          </button>
+          <button type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="2"
+            aria-label="Slide 3">
+          </button>
         </div>
         <div class="carousel-inner h-100">
           <div class="carousel-item active h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-contain" alt="...">
+            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
-          <div class="carousel-item  h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-contain" alt="...">
+          <div class="carousel-item h-100">
+            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
-          <div class="carousel-item  h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-contain" alt="...">
+          <div class="carousel-item h-100">
+            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselControls"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselControls"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -84,73 +142,141 @@
       </div>
     </section>
   </div>
-  <!-- CAROUSEL SECTION -->
- 
-  <div class="container" id="about-us">
-    <!-- ABOUT US -->
+  <!--  TO DO CAROUSEL SECTION -->
+
+  <div class="container">
+    <!--  TO DO ABOUT US -->
+    <div id="about-us" class="pt-5"></div>
     <section class="about-us-wrapper">
-      <div class="card my-5 h-100">
+      <div class="card mb-3 mb-md-4 mb-lg-5 h-100">
         <div class="row g-0 h-100">
-          <div class="col-md-4 h-100">
-            <img src="https://picsum.photos/600/500" class="h-100 rounded-start object-fit-cover" alt="...">
+          <div class="col-12 col-lg-4 about-us-photo-wrapper">
+            <img src="https://picsum.photos/600/500" class="w-100 h-100 rounded-start object-fit-cover" alt="About us">
           </div>
-          <div class="col-md-8">
+          <div class="col-12 col-lg-8">
             <div class="card-body">
-              <h1>About us</h1>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <h1 class="card-title">About us</h1>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer. This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.This is a wider card with supporting text below as a
+                natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ABOUT US -->
+    <!--  TO DO ABOUT US -->
 
     <!-- PRODUCTS -->
+    <div id="products "class="pt-5"></div>
     <section>
-      <div class="my-5">
-        <div class="mb-5">
-          <h1>Title</h1>
+      <div class="mb-3 mb-md-4 mb-lg-5">
+        <div class="mb-3 mb-md-4 mb-md-5">
+          <h1>Products</h1>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
-          <div class="col">
-            <div class="card product-card">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="...">
+          <div class="col col-md-6 col-lg-4">
+            <div class="card product-card product-card-height btn btn-light p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#productsModal">
+              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 1">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="custom-overflow overflow-one-row">Product 1</h5>
+                <p class="custom-overflow overflow-eight-row">
+                  This is a longer card with supporting text below as a
+                  natural
+                  lead-in to additional
+                  content. This content is a little bit longer.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card product-card">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="...">
+          <div class="col col-md-6 col-lg-4">
+            <div class="card product-card  product-card-height btn btn-light p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#productsModal">
+              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 2">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="custom-overflow overflow-one-row">
+                  Product 2Product 2Product 2Product 2Product 2Product
+                  2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2
+                </h5>
+                <p class="custom-overflow overflow-eight-row">
+                  This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card product-card">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="...">
+          <div class="col col-md-6 col-lg-4">
+            <div class="card product-card product-card-height btn btn-light p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#productsModal">
+              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 3">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content.</p>
+                <h5 class="custom-overflow overflow-one-row">Product 3</h5>
+                <p class="custom-overflow overflow-eight-row">
+                  This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This is a longer card with supporting text below as a natural lead-in to additional
+                  content.This is a longer card with supporting text below as a natural lead-in to additional
+                  content.This is a longer card with supporting text below as a natural lead-in to additional
+                  content.
+                </p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card product-card">
-              <img src="https://picsum.photos/600/500" class="card-img-top  h-50 object-fit-cover" alt="...">
+          <div class="col col-md-6 col-lg-4">
+            <div class="card product-card  product-card-height btn btn-light p-0"
+              data-bs-toggle="modal"
+              data-bs-target="#productsModal">
+              <img src="https://picsum.photos/600/500" class="card-img-top  h-50 object-fit-cover" alt="Product 4">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <h5 class="custom-overflow overflow-one-row">Product 4</h5>
+                <p class="custom-overflow overflow-eight-row">
+                  This is a longer card with supporting text below as a
+                  natural lead-in to additional
+                  content. This content is a little bit longer.
+                </p>
               </div>
             </div>
           </div>
@@ -159,182 +285,242 @@
     </section>
     <!-- PRODUCTS -->
 
-    <!-- SERVICES -->
-    <section>
-      <div class="my-5">
-        <div class="mb-5">
-          <h1>Title</h1>
+    <!-- PRODUCTS MODAL-->
+    <div id="productsModal"
+      class="modal fade"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="productsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-body-tertiary">
+            <h1 class="modal-title fs-5" id="productsModalLabel">Lorem Ipsum</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card mb-3 border-0">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://picsum.photos/600/500" class="w-100 img-fluid rounded-start" alt="Product image">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5>
+                      Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product
+                      2Product 2Product 2Product 2
+                    </h5>
+                    <p>
+                      This is a longer card with supporting text below as a natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.This is a longer card with supporting text below as a
+                      natural lead-in to additional
+                      content. This content is a little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne">
-                Accordion Item #1
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+      </div>
+    </div>
+    <!-- Modal products -->
+
+    <!-- SERVICES -->
+    <div id="services" class="pt-5"></div>
+    <section>
+      <div class="mb-3 mb-md-4 mb-lg-5">
+        <div class="mb-3 mb-md-4 mb-md-5">
+          <h1>Services</h1>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <button id="service-one"
+              class="nav-link active text-dark btn btn-light rounded-bottom-0"
+              data-bs-toggle="tab"
+              data-bs-target="#service-one-pane"
+              type="button"
+              role="tab"
+              aria-controls="service-one-pane"
+              aria-selected="true">
+              Service 1
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="service-two"
+              class="nav-link text-dark btn btn-light rounded-bottom-0"
+              data-bs-toggle="tab"
+              data-bs-target="#service-two-pane"
+              type="button"
+              role="tab"
+              aria-controls="service-two-pane"
+              aria-selected="false">
+              Service 2
+            </button>
+          </li>
+          <li class="nav-item">
+            <button id="service-three"
+              class="nav-link text-dark btn btn-light rounded-bottom-0"
+              data-bs-toggle="tab"
+              data-bs-target="#service-three-pane"
+              type="button"
+              role="tab"
+              aria-controls="service-three-pane"
+              aria-selected="false">
+              Service 3
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content services-wrapper p-2 border border-1 border-top-0 rounded-bottom-3">
+          <div id="service-one-pane"
+            class="tab-pane fade show active services"
+            role="tabpanel"
+            aria-labelledby="service-one-tab">
+            Service 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+          <div  id="service-two-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="service-two-tab">
+            Service 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequa
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                custom
-                CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-                the
-                <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+          <div id="service-three-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="service-three-tab">
+            Service 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           </div>
         </div>
       </div>
     </section>
     <!-- SERVICES -->
 
-    <!-- OUR TEAM --> 
+    <!-- OUR TEAM -->
+    <div id="our-team" class="pt-5"></div>
     <section>
-      <div class="my-3 my-md-4 my-lg-5">
+      <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
           <h1>Our team</h1>
         </div>
         <div class="row">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button type="button"
-            class="btn btn-light"
-            data-bs-toggle="popover"
-            data-bs-trigger="focus"
-            data-bs-placement="bottom"
-            data-bs-title="FirstName LastName - Position"
-            data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-            <figure class="figure team-member" >
-              <img src="https://picsum.photos/600/500" 
-                class="img-thumbnail rounded-circle object-fit-contain" 
-                alt="FirstName LastName">
-              <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-              <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-            </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button type="button"
-            class="btn btn-light"
-            data-bs-toggle="popover"
-            data-bs-trigger="focus"
-            data-bs-placement="bottom"
-            data-bs-title="FirstName LastName - Position"
-            data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-            <figure class="figure team-member">
-              <img src="https://picsum.photos/600/500"
-                class="img-thumbnail rounded-circle object-fit-contain"
-                alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-            </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5"> 
-            <button type="button"
-            class="btn btn-light"
-            data-bs-toggle="popover"
-            data-bs-trigger="focus"
-            data-bs-placement="bottom"
-            data-bs-title="FirstName LastName - Position"
-            data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-            <figure class="figure team-member">
-              <img src="https://picsum.photos/600/500"
-                class="img-thumbnail rounded-circle object-fit-contain"
-                alt="FirstName LastName">
-              <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-              <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-            </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button type="button"
-            class="btn btn-light"
-            data-bs-toggle="popover"
-            data-bs-trigger="focus"
-            data-bs-placement="bottom"
-            data-bs-title="FirstName LastName - Position"
-            data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-            <figure class="figure team-member">
-              <img src="https://picsum.photos/600/500"
-                class="img-thumbnail rounded-circle object-fit-contain"
-                alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-            </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button type="button"
-              class="btn btn-light"
+            <button class="btn btn-light"
+              type="button"
               data-bs-toggle="popover"
               data-bs-trigger="focus"
               data-bs-placement="bottom"
               data-bs-title="FirstName LastName - Position"
               data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
               <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500" class="img-thumbnail rounded-circle object-fit-contain"
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
                   alt="FirstName LastName">
-                  <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                  <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
               </figure>
             </button>
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button type="button"
-              class="btn btn-light"
+            <button class="btn btn-light"
+              type="button"
               data-bs-toggle="popover"
+              data-bs-trigger="focus"
               data-bs-placement="bottom"
+              data-bs-title="FirstName LastName - Position"
+              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+              <figure class="figure team-member">
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
+                  alt="FirstName LastName">
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+              </figure>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
+            <button class="btn btn-light"
+              type="button"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-placement="bottom"
+              data-bs-title="FirstName LastName - Position"
+              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+              <figure class="figure team-member">
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
+                  alt="FirstName LastName">
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+              </figure>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
+            <button class="btn btn-light"
+              type="button"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-placement="bottom"
+              data-bs-title="FirstName LastName - Position"
+              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+              <figure class="figure team-member">
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
+                  alt="FirstName LastName">
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+              </figure>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
+            <button class="btn btn-light"
+              type="button"
+              data-bs-toggle="popover"
+              data-bs-trigger="focus"
+              data-bs-placement="bottom"
+              data-bs-title="FirstName LastName - Position"
+              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+              <figure class="figure team-member">
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
+                  alt="FirstName LastName">
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+              </figure>
+            </button>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
+            <button class="btn btn-light"
+            type="button"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
               data-bs-trigger="focus"
               data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."> 
+              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
               <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500" class="img-thumbnail rounded-circle object-fit-contain"
+                <img src="https://picsum.photos/600/500"
+                  class="img-thumbnail rounded-circle object-fit-contain"
                   alt="FirstName LastName">
-                  <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                  <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
+                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
               </figure>
             </button>
           </div>
@@ -344,8 +530,9 @@
     <!-- OUR TEAM -->
 
     <!-- TESTIMONIALS -->
+    <div class="pt-5" id="testimonials"></div>
     <section>
-      <div class="my-3 my-md-4 my-lg-5">
+      <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
           <h1>Testimonials</h1>
         </div>
@@ -353,123 +540,109 @@
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 1
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 1</div>
               <div class="card-body">
                 <h5 class="card-title">Testtimonial 1</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                2 days ago
-              </div>
+              <div class="card-footer">2 days ago</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 2
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 2</div>
               <div class="card-body">
                 <h5 class="card-title">Testimonial 2</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna
                   aliqua.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                12 days ago
-              </div>
+              <div class="card-footer">12 days ago</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 3
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 3</div>
               <div class="card-body">
                 <h5 class="card-title">Special title treatment</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                22 days ago
-              </div>
+              <div class="card-footer">22 days ago</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 4
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 4</div>
               <div class="card-body">
                 <h5 class="card-title">Testtimonial 1</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                30 days ago
-              </div>
+              <div class="card-footer">30 days ago</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 5
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 5</div>
               <div class="card-body">
                 <h5 class="card-title">Testimonial 2</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna
                   aliqua.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                1 month ago
-              </div>
+              <div class="card-footer">1 month ago</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
             <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
               data-bs-toggle="modal"
-              data-bs-target="#modalElement">
-              <div class="card-header">
-                Testimonial 6
-              </div>
+              data-bs-target="#testimonialsModal">
+              <div class="card-header">Testimonial 6</div>
               <div class="card-body">
                 <h5 class="card-title">Testimonial 3</h5>
                 <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
                 </p>
                 <small><em>FistName LastName</em></small>
               </div>
-              <div class="card-footer">
-                1 year ago
-              </div>
+              <div class="card-footer">1 year ago</div>
             </div>
           </div>
         </div>
@@ -477,9 +650,41 @@
     </section>
     <!-- TESTIMONIALS -->
 
+    <!-- MODAL TESTIMONIALS -->
+    <div id="testimonialsModal"
+      class="modal fade"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="testimonialsModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-body-tertiary">
+            <h1 class="modal-title fs-5">Lorem Ipsum</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+            <small><em>FistName LastName</em></small>
+          </div>
+          <div class="modal-footer bg-body-tertiary">1 year ago</div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL TESTIMONIALS -->
+
     <!-- CONTRACTS -->
+    <div class="pt-5" id="contacts"></div>
     <section>
-      <div class="my-3 my-md-4 my-lg-5">
+      <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
           <h1>Message us</h1>
         </div>
@@ -487,15 +692,15 @@
           <div class="col-12 col-md-6 order-1 order-md-0">
             <div class="row g-3">
               <div class="col-12 col-xl-6 form-floating">
-                <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                <input id="inputName" type="text" class="form-control" placeholder="Name" required>
                 <label for="inputName" class="form-label mx-2">Name:</label>
               </div>
               <div class="col-12 col-xl-6  form-floating">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
                 <label for="inputEmail" class="form-label mx-2">Email:</label>
               </div>
               <div class="col-12 col-xl-6  form-floating">
-                <input type="text" class="form-control" id="inputPhone" placeholder="Phone" required>
+                <input id="inputPhone" type="text" class="form-control" placeholder="Phone" required>
                 <label for="inputPhone" class="form-label mx-2">Phone:</label>
               </div>
               <div class="col-12 col-xl-6  form-floating">
@@ -519,7 +724,8 @@
               </li>
               <li class="list-group-item border-0">
                 <span class="fw-bold">Email: </span>
-                <a class="text-decoration-none link-secondary" href="mailto:loremipsum@loremipsum">loremipsum@loremipsum</a>
+                <a class="text-decoration-none link-secondary"
+                  href="mailto:loremipsum@loremipsum">loremipsum@loremipsum</a>
               </li>
               <li class="list-group-item border-0">
                 <span class="fw-bold">Address: </span>
@@ -532,7 +738,7 @@
           </div>
           <div class="col-12 order-2">
             <div class="form-floating text-area-height">
-              <textarea class="form-control h-100" placeholder="Your message:" id="message"></textarea>
+              <textarea id="message" class="form-control h-100" placeholder="Your message:"></textarea>
               <label for="message" class="mx-2">Your message:</label>
             </div>
             <button type="submit" class="btn btn-secondary mt-3">Send message</button>
@@ -548,40 +754,23 @@
 <footer>
   <div class="container-fluid d-flex justify-content-center w-100 bg-light border-top fixed-bottom">
     <p class="my-3 text-secondary">
-      Created by 
-      <a href="https://www.linkedin.com/in/georgi-brankovanov/" target="_blank" class="text-decoration-none link-secondary fw-bold">Georgi Brankovanov</a>
-       - 
+      Created by
+      <a href="https://www.linkedin.com/in/georgi-brankovanov/"
+        target="_blank"
+        class="text-decoration-none link-secondary fw-bold">
+        Georgi Brankovanov
+      </a>
+      -
       <span>2024</span>
     </p>
   </div>
 </footer>
 <!-- FOOTER -->
-
-<!-- Modal -->
-<div class="modal fade" id="modalElement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalElementLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header bg-body-tertiary">
-        <h1 class="modal-title fs-5" id="modalElementLabel">Lorem Ipsum</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <small><em>FistName LastName</em></small>
-      </div>
-      <div class="modal-footer bg-body-tertiary">
-        1 year ago
-      </div>
-    </div>
-  </div>
-</div>
 </html>
 
-<script>
-  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>
+
+
+<!-- TODO -> icon -->
+<!-- TODO -> content -->
+<!-- TODO -> themes -->
+
