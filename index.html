@@ -34,12 +34,12 @@
 <!-- SIDE MENU -->
 <div id="navigation-side-menu"
   class="offcanvas offcanvas-start"
-  data-bs-scroll="true" tabindex="-1"
+  data-bs-scroll="true" tabindex="-1" data-bs-backdrop="false"
   aria-labelledby="navigation-side-menu-label">
   <div class="offcanvas-header">
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body d-flex flex-wrap align-content-between">
     <ul class="navbar-nav">
       <li class="nav-item mb-2">
         <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
@@ -78,6 +78,11 @@
         </a>
       </li>
     </ul>
+    <select class="form-select" aria-label="Language selector" data-width="fit" onchange="changeLanguage(this)">
+      <option value="en">EN</option>
+      <option value="de">DE</option>
+      <option value="bg">BG</option>
+    </select>
   </div>
 </div>
 <!-- SIDE MENU -->
@@ -428,6 +433,7 @@
     </section>
     <!-- CONTRACTS -->
   </div>
+  
 </body>
 
 <!-- FOOTER -->
@@ -445,4 +451,11 @@
 </footer>
 <!-- FOOTER -->
 </html>
+<!-- SPINNER -->
+<div id='spinner' class="d-none align-content-center justify-content-center flex-wrap spinner">
+  <div class="spinner-border d-flex justify-content-center align-content-center flex-wrap" role="status">
+    <div class="spinner-grow spinner-grow-sm" role="status"></div>
+  </div>
+</div>
+<!-- SPINNER -->
 <script src="scripts/main.js"></script>
