@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "bootstrap/css/bootstrap.css";
+@import "header-styles.css";
 @import "products-styles.css";
 @import "carousel-styles.css";
 @import "about-us-styles.css";
