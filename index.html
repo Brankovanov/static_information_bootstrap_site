@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lorem ipsum</title>
+  <title>LoremIpsum Solutions</title>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="scripts/main.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="LoremIpsum Solutions" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
 <!--HEADER SECTION -->
@@ -19,7 +24,7 @@
         data-bs-toggle="offcanvas"
         data-bs-target="#navigation-side-menu"
         aria-controls="navigation-side-menu">
-        Navbar
+        <img class="header-logo" src="assets/logo/logoipsum.svg">
       </a>
     </div>
   </nav>
@@ -29,8 +34,7 @@
 <!-- SIDE MENU -->
 <div id="navigation-side-menu"
   class="offcanvas offcanvas-start"
-  data-bs-scroll="true"
-  tabindex="-1" 
+  data-bs-scroll="true" tabindex="-1"
   aria-labelledby="navigation-side-menu-label">
   <div class="offcanvas-header">
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -44,8 +48,8 @@
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a class="d-inline-block w-100  text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#products">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
+          href="#products-section">
           Products
         </a>
       </li>
@@ -79,206 +83,87 @@
 <!-- SIDE MENU -->
 
 <body class="pb-5">
-  <!-- TO DO CAROUSEL SECTION -->
-  <div class="container-fluid gx-0">
-    <section class="carousel-wrapper">
-      <div id="carouselControls" class="carousel slide h-100 bg-body-secondary">
-        <div class="carousel-indicators">
-          <button class="active"
-            type="button"
-            data-bs-target="#carouselControls"
-            data-bs-slide-to="0" 
-            aria-current="true"
-            aria-label="Slide 1">
+  <!-- CAROUSEL SECTION -->
+  <div class="container-fluid gx-0 ">
+    <section>
+      <div class="carousel-wrapper">
+        <div id="carousel-controls" class="carousel slide h-100 bg-body-secondary d-none d-md-block">
+          <div id="slides-wrapper" class="carousel-inner h-100">
+            <div class="carousel-item h-100">
+              <img src="" class="d-block w-100 h-100 object-fit-cover" alt="Placeholder">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-controls" data-bs-slide="prev">
+            <div class="btn btn-secondary rounded-circle p-2 d-flex justify-content-center align-content-center">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </div>
           </button>
-          <button type="button"
-            data-bs-target="#carouselControls"
-            data-bs-slide-to="1"
-            aria-label="Slide 2">
-          </button>
-          <button type="button"
-            data-bs-target="#carouselControls"
-            data-bs-slide-to="2"
-            aria-label="Slide 3">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-controls" data-bs-slide="next">
+            <div class="btn btn-secondary rounded-circle p-2 d-flex justify-content-center align-content-center">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </div>
           </button>
         </div>
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item h-100">
-            <img src="https://picsum.photos/600/500" class="d-block w-100 h-100 object-fit-cover" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
   </div>
-  <!--  TO DO CAROUSEL SECTION -->
+  <!-- CAROUSEL SECTION -->
 
   <div class="container">
-    <!--  TO DO ABOUT US -->
+    <!-- ABOUT US -->
     <div id="about-us" class="pt-5"></div>
-    <section class="about-us-wrapper">
+    <section id="about-us-section-container" class="about-us-wrapper">
       <div class="card mb-3 mb-md-4 mb-lg-5 h-100">
         <div class="row g-0 h-100">
-          <div class="col-12 col-lg-4 about-us-photo-wrapper">
-            <img src="https://picsum.photos/600/500" class="w-100 h-100 rounded-start object-fit-cover" alt="About us">
+          <div class="col-12 col-lg-6 col-xl-4 about-us-photo-wrapper">
+            <img id="about-us-image" src="" class="w-100 h-100 rounded-start object-fit-cover" alt="Placeholder">
           </div>
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-6 col-xl-8">
             <div class="card-body">
-              <h1 class="card-title">About us</h1>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer. This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.This is a wider card with supporting text below as a
-                natural lead-in to additional
-                content. This content is a little bit longer.
-              </p>
+              <h1 id="about-us-title" class="card-title">Placeholder</h1>
+              <p id="about-us-body" class="card-text">Placeholder</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--  TO DO ABOUT US -->
+    <!-- ABOUT US -->
 
     <!-- PRODUCTS -->
-    <div id="products "class="pt-5"></div>
-    <section>
+    <div id="products-section" class="pt-5"></div>
+    <section id="products-section-container">
       <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
-          <h1>Products</h1>
+          <h1 id="products-title">Placeholder</h1>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 ">
+        <div id='product-wrapper' class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           <div class="col col-md-6 col-lg-4">
-            <div class="card product-card product-card-height btn btn-light p-0"
+            <button class='border rounded-2'
               data-bs-toggle="modal"
-              data-bs-target="#productsModal">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 1">
-              <div class="card-body">
-                <h5 class="custom-overflow overflow-one-row">Product 1</h5>
-                <p class="custom-overflow overflow-eight-row">
-                  This is a longer card with supporting text below as a
-                  natural
-                  lead-in to additional
-                  content. This content is a little bit longer.
-                </p>
+              data-bs-target="#productsModal"
+              onclick="getModalData(this)">
+              <div class="card product-card product-card-height btn btn-light p-0">
+                <img id='product-image'
+                  class="card-img-top h-75 object-fit-cover"
+                  src=""
+                  data-content-image="contentImage"
+                  alt="Placeholder">
+                <div class="card-body">
+                  <h5 id='product-title'
+                    class="custom-overflow overflow-one-row"
+                    data-content-label="contentLabel">
+                    Placeholder
+                  </h5>
+                  <p id='product-content'
+                    class="custom-overflow overflow-eight-row"
+                    data-content-body="contentBody">
+                    Placeholder
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4">
-            <div class="card product-card  product-card-height btn btn-light p-0"
-              data-bs-toggle="modal"
-              data-bs-target="#productsModal">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 2">
-              <div class="card-body">
-                <h5 class="custom-overflow overflow-one-row">
-                  Product 2Product 2Product 2Product 2Product 2Product
-                  2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2
-                </h5>
-                <p class="custom-overflow overflow-eight-row">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4">
-            <div class="card product-card product-card-height btn btn-light p-0"
-              data-bs-toggle="modal"
-              data-bs-target="#productsModal">
-              <img src="https://picsum.photos/600/500" class="card-img-top h-50 object-fit-cover" alt="Product 3">
-              <div class="card-body">
-                <h5 class="custom-overflow overflow-one-row">Product 3</h5>
-                <p class="custom-overflow overflow-eight-row">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This is a longer card with supporting text below as a natural lead-in to additional
-                  content.This is a longer card with supporting text below as a natural lead-in to additional
-                  content.This is a longer card with supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col col-md-6 col-lg-4">
-            <div class="card product-card  product-card-height btn btn-light p-0"
-              data-bs-toggle="modal"
-              data-bs-target="#productsModal">
-              <img src="https://picsum.photos/600/500" class="card-img-top  h-50 object-fit-cover" alt="Product 4">
-              <div class="card-body">
-                <h5 class="custom-overflow overflow-one-row">Product 4</h5>
-                <p class="custom-overflow overflow-eight-row">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional
-                  content. This content is a little bit longer.
-                </p>
-              </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -286,7 +171,7 @@
     <!-- PRODUCTS -->
 
     <!-- PRODUCTS MODAL-->
-    <div id="productsModal"
+    <div id="productsModal" 
       class="modal fade"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
@@ -296,37 +181,18 @@
       <div class="modal-dialog modal-fullscreen modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-body-tertiary">
-            <h1 class="modal-title fs-5" id="productsModalLabel">Lorem Ipsum</h1>
+            <h1 class="modal-title fs-5" data-modal-label="modalLabel">Placeholder</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="card mb-3 border-0">
               <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="https://picsum.photos/600/500" class="w-100 img-fluid rounded-start" alt="Product image">
+                <div class="col-lg-4">
+                  <img data-modal-label="modalImage" src="" class="w-100 img-fluid rounded-start" alt="Placeholder">
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                   <div class="card-body">
-                    <h5>
-                      Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product 2Product
-                      2Product 2Product 2Product 2
-                    </h5>
-                    <p>
-                      This is a longer card with supporting text below as a natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.This is a longer card with supporting text below as a
-                      natural lead-in to additional
-                      content. This content is a little bit longer.
-                    </p>
+                    <p data-modal-label="modalBody">Placeholder</p>
                   </div>
                 </div>
               </div>
@@ -339,75 +205,32 @@
 
     <!-- SERVICES -->
     <div id="services" class="pt-5"></div>
-    <section>
+    <section id="services-wrapper">
       <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
-          <h1>Services</h1>
+          <h1 id="services-title">Placeholder</h1>
         </div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <button id="service-one"
-              class="nav-link active text-dark btn btn-light rounded-bottom-0"
+        <ul id="services-tab-navigation-wrapper" class="nav nav-tabs">
+          <li class="nav-item flex-grow-1">
+            <button id="placeholder"
+              class="w-100 nav-link active text-dark btn btn-light rounded-bottom-0"
               data-bs-toggle="tab"
-              data-bs-target="#service-one-pane"
+              data-bs-target="#placeholder-pane"
               type="button"
               role="tab"
-              aria-controls="service-one-pane"
+              aria-controls="placeholder-pane"
               aria-selected="true">
-              Service 1
-            </button>
-          </li>
-          <li class="nav-item">
-            <button id="service-two"
-              class="nav-link text-dark btn btn-light rounded-bottom-0"
-              data-bs-toggle="tab"
-              data-bs-target="#service-two-pane"
-              type="button"
-              role="tab"
-              aria-controls="service-two-pane"
-              aria-selected="false">
-              Service 2
-            </button>
-          </li>
-          <li class="nav-item">
-            <button id="service-three"
-              class="nav-link text-dark btn btn-light rounded-bottom-0"
-              data-bs-toggle="tab"
-              data-bs-target="#service-three-pane"
-              type="button"
-              role="tab"
-              aria-controls="service-three-pane"
-              aria-selected="false">
-              Service 3
+              Placeholder
             </button>
           </li>
         </ul>
-        <div class="tab-content services-wrapper p-2 border border-1 border-top-0 rounded-bottom-3">
-          <div id="service-one-pane"
+        <div id="services-tab-content-wrapper"
+          class="tab-content services-wrapper p-2 border border-1 border-top-0 rounded-bottom-3">
+          <div id="placeholder-pane"
             class="tab-pane fade show active services"
             role="tabpanel"
-            aria-labelledby="service-one-tab">
-            Service 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div  id="service-two-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="service-two-tab">
-            Service 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequa
-          </div>
-          <div id="service-three-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="service-three-tab">
-            Service 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            aria-labelledby="placeholdery-tab">
+            Placeholder
           </div>
         </div>
       </div>
@@ -416,111 +239,33 @@
 
     <!-- OUR TEAM -->
     <div id="our-team" class="pt-5"></div>
-    <section>
+    <section id="out-team-wrapper">
       <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
-          <h1>Our team</h1>
+          <h1 id="our-team-title">Placeholder</h1>
         </div>
-        <div class="row">
+        <div id="team-members" class="row justify-content-center">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
             <button class="btn btn-light"
-              type="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-placement="bottom"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+              data-bs-toggle="modal"
+              data-bs-target="#ourTeamModal"
+              onclick="getModalData(this)">
               <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
+                <img id="team-member-image"
                   class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-              </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button class="btn btn-light"
-              type="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-placement="bottom"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-              <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
-                  class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-              </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button class="btn btn-light"
-              type="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-placement="bottom"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-              <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
-                  class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-              </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button class="btn btn-light"
-              type="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-placement="bottom"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-              <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
-                  class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-              </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button class="btn btn-light"
-              type="button"
-              data-bs-toggle="popover"
-              data-bs-trigger="focus"
-              data-bs-placement="bottom"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-              <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
-                  class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
-              </figure>
-            </button>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 g-5">
-            <button class="btn btn-light"
-            type="button"
-            data-bs-toggle="popover"
-            data-bs-placement="bottom"
-              data-bs-trigger="focus"
-              data-bs-title="FirstName LastName - Position"
-              data-bs-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
-              <figure class="figure team-member">
-                <img src="https://picsum.photos/600/500"
-                  class="img-thumbnail rounded-circle object-fit-contain"
-                  alt="FirstName LastName">
-                <figcaption class="figure-caption text-center">FirstName LastName</figcaption>
-                <figcaption class="figure-caption text-center fw-bold">Position</figcaption>
+                  data-content-image="contentImage" src=""
+                  alt="Placeholder - Placeholder">
+                <figcaption id="team-member-name"
+                  class="figure-caption text-center"
+                  data-bio="Placeholder"
+                  data-content-label="contentLabel">
+                  Placeholder
+                </figcaption>
+                <figcaption id="team-member-position"
+                  class="figure-caption text-center fw-bold"
+                  data-content-body="contentBody">
+                  Placeholder
+                </figcaption>
               </figure>
             </button>
           </div>
@@ -529,153 +274,90 @@
     </section>
     <!-- OUR TEAM -->
 
-    <!-- TESTIMONIALS -->
-    <div class="pt-5" id="testimonials"></div>
-    <section>
-      <div class="mb-3 mb-md-4 mb-lg-5">
-        <div class="mb-3 mb-md-4 mb-md-5">
-          <h1>Testimonials</h1>
-        </div>
-        <div class="row gy-3 g-sm-5">
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 1</div>
-              <div class="card-body">
-                <h5 class="card-title">Testtimonial 1</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">2 days ago</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 2</div>
-              <div class="card-body">
-                <h5 class="card-title">Testimonial 2</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">12 days ago</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 3</div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                  dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">22 days ago</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 4</div>
-              <div class="card-body">
-                <h5 class="card-title">Testtimonial 1</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">30 days ago</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 5</div>
-              <div class="card-body">
-                <h5 class="card-title">Testimonial 2</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna
-                  aliqua.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">1 month ago</div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card text-center link-secondary link-opacity-50 link-opacity-100-hover testimonial"
-              data-bs-toggle="modal"
-              data-bs-target="#testimonialsModal">
-              <div class="card-header">Testimonial 6</div>
-              <div class="card-body">
-                <h5 class="card-title">Testimonial 3</h5>
-                <p class="card-text text-truncate">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                  dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
-                </p>
-                <small><em>FistName LastName</em></small>
-              </div>
-              <div class="card-footer">1 year ago</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TESTIMONIALS -->
-
-    <!-- MODAL TESTIMONIALS -->
-    <div id="testimonialsModal"
+    <!-- MODAL OUR TEAM -->
+    <div id="ourTeamModal"
       class="modal fade"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
-      aria-labelledby="testimonialsModalLabel"
+      aria-labelledby="ourTeamModal"
       aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-body-tertiary">
-            <h1 class="modal-title fs-5">Lorem Ipsum</h1>
+            <h3 data-modal-label="modalLabel">Placeholder</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-            <small><em>FistName LastName</em></small>
+            <div class="card mb-3 border-0">
+              <div class="row g-0">
+                <div class="col-lg-4">
+                  <img data-modal-label="modalImage"
+                    src=""
+                    class="w-100 img-fluid rounded-circle"
+                    alt="Place holder - Placeholder">
+                </div>
+                <div class="col-lg-8">
+                  <div class="card-body">
+                    <p data-modal-label="modalBody">Placeholder</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer bg-body-tertiary">1 year ago</div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL OUR TEAM -->
+
+    <!-- TESTIMONIALS -->
+    <div class="pt-5" id="testimonials"></div>
+    <section id="testimonials-wrapper">
+      <div class="mb-3 mb-md-4 mb-lg-5">
+        <div class="mb-3 mb-md-4 mb-md-5">
+          <h1 id="testimonials-title">Placeholder</h1>
+        </div>
+        <div id="testimonials-wrapper" class="row gy-3 g-sm-5 justify-content-center">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card text-center link-secondary testimonial h-100">
+              <button class="btn btn-light h-100"
+                data-bs-toggle="modal"
+                data-bs-target="#testimonialsModal"
+                onclick="getModalData(this)">
+                <div class="card-body">
+                  <p id="testimonial-content" class="card-text text-truncate" data-content-body="contentBody">
+                    Placeholder
+                  </p>
+                  <small>
+                    <em id="testimonial-credentials" data-content-label="contentLabel">
+                      Placeholder, Placeholder
+                    </em>
+                  </small>
+                </div>
+                <div id="testimonial-date">Placeholder</div>
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- TESTIMONIALS -->
+
+    <!-- MODAL TESTIMONIALS -->
+    <div id="testimonialsModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="testimonialsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-body-tertiary">
+            <h6 data-modal-label="modalLabel">
+              Placeholder
+            </h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p data-modal-label="modalBody">
+              Placeholder
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -724,13 +406,11 @@
               </li>
               <li class="list-group-item border-0">
                 <span class="fw-bold">Email: </span>
-                <a class="text-decoration-none link-secondary"
-                  href="mailto:loremipsum@loremipsum">loremipsum@loremipsum</a>
+                <a class="text-decoration-none link-secondary" href="mailto:loremipsum@loremipsum">loremipsum@loremipsum</a>
               </li>
               <li class="list-group-item border-0">
                 <span class="fw-bold">Address: </span>
-                <a class="text-decoration-none link-secondary" href="https://maps.app.goo.gl/WRAX1mHAQMCW1qJG8"
-                  target="_blank">
+                <a class="text-decoration-none link-secondary" href="https://maps.app.goo.gl/WRAX1mHAQMCW1qJG8" target="_blank">
                   Bulgaria, Ruse, Statue of liberty
                 </a>
               </li>
@@ -755,9 +435,7 @@
   <div class="container-fluid d-flex justify-content-center w-100 bg-light border-top fixed-bottom">
     <p class="my-3 text-secondary">
       Created by
-      <a href="https://www.linkedin.com/in/georgi-brankovanov/"
-        target="_blank"
-        class="text-decoration-none link-secondary fw-bold">
+      <a href="https://www.linkedin.com/in/georgi-brankovanov/" target="_blank" class="text-decoration-none link-secondary fw-bold">
         Georgi Brankovanov
       </a>
       -
@@ -767,10 +445,4 @@
 </footer>
 <!-- FOOTER -->
 </html>
-
-
-
-<!-- TODO -> icon -->
-<!-- TODO -> content -->
-<!-- TODO -> themes -->
-
+<script src="scripts/main.js"></script>
