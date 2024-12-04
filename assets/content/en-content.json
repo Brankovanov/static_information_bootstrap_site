@@ -44,7 +44,7 @@
           "imageUrl": "https://picsum.photos/id/36/600/500.webp"
         },
         {
-          "name": "Lorem Ipsum Pay Gatewa",
+          "name": "Lorem Ipsum Pay Gateway",
           "content": "Simplify transactions and enhance customer experience with Lorem Ipsum Pay Gateway, a seamless payment processing system that supports multiple currencies and payment methods. With features like fraud detection, recurring billing, and integration with popular accounting software, Lorem Ipsum Pay Gateway ensures secure and efficient transactions, making it an ideal choice for businesses of all scales.",
           "imageUrl": "https://picsum.photos/id/48/600/500.webp"
         },
@@ -148,15 +148,15 @@
         },
         {
           "testimonial": "\"I can’t say enough good things about LoremIpsum’s marketing team. Their digital campaigns helped us reach a wider audience and increased our sales by over 30% in just six months. They don’t just deliver results; they understand your vision and bring it to life.\"",
-          "author": "Laura Chen",
-          "position": "COO of Streamline Logistics",
-          "date": "May 3, 2024"
+          "author": "Tom Andersen",
+          "position": "Founder of Artisan Creations",
+          "date": "June 8, 2024"
         },
         {
           "testimonial": "\"LoremIpsum’s software development team built a custom solution for our logistics business, and the results have been phenomenal. The system is intuitive, reliable, and has significantly reduced our operational bottlenecks. We look forward to working with them again on future projects.\"",
           "author": "Laura Chen",
-          "position": "CEO of Bright Futures Consulting",
-          "date": "October 5, 2024"
+          "position": "COO of Streamline Logistics",
+          "date": "May 3, 2024"
         },
         {
           "testimonial": "\"The tools and insights provided by LoremIpsum’s analytics suite have completely changed how we approach decision-making. Their team is professional, knowledgeable, and genuinely invested in their clients’ success. I highly recommend their services to anyone looking to grow their business.\"",

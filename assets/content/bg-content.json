@@ -16,153 +16,153 @@
       ]
     },
     "aboutUs": {
-      "name": "About us",
+      "name": "За нас",
       "imageUrl": "https://picsum.photos/id/668/600/500.webp",
-      "content": "bg At LoremIpsum Solutions, we believe in turning challenges into opportunities and ideas into realities. Our mission is to empower businesses with innovative solutions, cutting-edge technology, and unparalleled customer service. Whether you're a start-up looking to establish your presence or an established company seeking growth, LoremIpsum Solutions is here to support you every step of the way. We pride ourselves on delivering customized strategies that drive success and create lasting value for our clients. <br> LoremIpsum Solutions was founded in 2010 with a clear vision: to create a company that blends creativity, technology, and strategic thinking. What started as a small consultancy firm has evolved into a full-service provider, offering a wide array of products and services tailored to meet the unique needs of diverse industries. Over the years, we have built a reputation for excellence, innovation, and trust. <br> From our humble beginnings in a shared workspace to establishing a global presence, our journey has been defined by continuous growth and transformation. We have partnered with over 500 businesses worldwide, helping them achieve their goals through collaboration and cutting-edge solutions. Today, LoremIpsum Solutions is proud to be a leader in delivering impactful results while innovation, and client satisfaction. <br> With a talented team of professionals, a robust portfolio of products, and a commitment to staying ahead LoremIpsum Solutions is ready to help your business thrive in an ever-changing marketplace."
+      "content": "В LoremIpsum Solutions вярваме в това да превръщаме предизвикателствата във възможности и идеите в реалност. Нашата мисия е да дадем възможност на бизнеса чрез иновативни решения, най-новите технологии и несравнимо обслужване на клиентите. Независимо дали сте стартираща компания, която търси своето място, или утвърдена организация, стремяща се към растеж, LoremIpsum Solutions е тук, за да ви подкрепя на всяка стъпка от пътя. Гордеем се, че предлагаме персонализирани стратегии, които водят до успех и създават трайна стойност за нашите клиенти. <br> LoremIpsum Solutions е основана през 2010 година с ясна визия: да създаде компания, която съчетава креативност, технологии и стратегическо мислене. Това, което започна като малка консултантска фирма, се превърна в доставчик на пълно обслужване, предлагащ разнообразие от продукти и услуги, съобразени с уникалните нужди на различни индустрии. През годините изградихме репутация за отлични постижения, иновации и доверие. <br> От нашите скромни начала в споделено работно пространство до изграждането на глобално присъствие, нашето пътуване е белязано от непрекъснат растеж и трансформация. Партнирали сме си с над 500 компании по целия свят, помагайки им да постигнат целите си чрез сътрудничество и авангардни решения. Днес LoremIpsum Solutions се гордее, че е лидер в предоставянето на въздействащи резултати, като остава вярна на основните ценности: интегритет, иновации и удовлетвореност на клиентите. <br> С талантлив екип от професионалисти, солидно портфолио от продукти и ангажираност да бъдем в крак с тенденциите в индустрията, LoremIpsum Solutions е готова да помогне на вашия бизнес да процъфтява в постоянно променящия се пазар."
     },
     "products": {
-      "name": "Products",
+      "name": "Продукти",
       "productsList": [
         {
           "name": "Lorem IpsumCRM Pro",
-          "content": "bg n advanced customer relationship management tool designed to streamline communication, manage customer data, and enhance sales efficiency. With features such as automated workflows, detailed analytics, and seamless integration with other business tools, Lorem IpsumCRM Pro simplifies customer interactions while maximizing team productivity. It is a perfect solution for businesses seeking to deepen relationships and drive long-term loyalty.",
+          "content": "Усъвършенстван инструмент за управление на взаимоотношенията с клиенти, създаден за оптимизиране на комуникацията, управление на клиентски данни и повишаване на ефективността на продажбите. С функции като автоматизирани работни потоци, детайлна аналитика и безпроблемна интеграция с други бизнес инструменти, Lorem IpsumCRM Pro опростява взаимодействията с клиентите, като същевременно максимизира производителността на екипа. Това е идеалното решение за бизнеси, които искат да задълбочат взаимоотношенията си и да изградят дългосрочна лоялност.",
           "imageUrl": "https://picsum.photos/id/802/600/500.webp"
         },
         {
           "name": "Lorem Ipsum Analytics Suite",
-          "content": "Harness the power of data with Lorem Ipsum Analytics Suite, a comprehensive analytics platform that provides real-time insights into your business operations. From tracking customer behavior to optimizing supply chains, this suite enables you to make informed decisions based on actionable metrics. Its intuitive dashboard, predictive modeling capabilities, and scalability make it an essential tool for growth-oriented businesses.",
+          "content": "Използвайте силата на данните с Lorem Ipsum Analytics Suite, цялостна аналитична платформа, която предоставя информация в реално време за бизнес операциите ви. От проследяване на поведението на клиентите до оптимизиране на веригите за доставки, този пакет ви позволява да вземате информирани решения въз основа на реални показатели. Интуитивното табло, възможностите за предсказуемо моделиране и мащабируемостта го правят незаменим инструмент за бизнеси, ориентирани към растеж.",
           "imageUrl": "https://picsum.photos/id/8/600/500.webp"
         },
         {
           "name": "Lorem Ipsum Web Builder",
-          "content": "Create stunning, professional websites effortlessly with Lorem Ipsum Web Builder. This platform features drag-and-drop functionality, responsive design templates, and advanced e-commerce integrations, allowing businesses to launch online stores or showcase their services with ease. Whether you’re a small business owner or a large enterprise, Lorem Ipsum Web Builder adapts to your needs, empowering you to establish a strong digital presence.",
+          "content": "Създавайте зашеметяващи и професионални уебсайтове без усилие с Lorem Ipsum Web Builder. Тази платформа предлага функционалност за плъзгане и пускане, адаптивни шаблони за дизайн и разширени интеграции за електронна търговия, което позволява на бизнеса да стартира онлайн магазини или да представя услугите си с лекота. Независимо дали сте собственик на малък бизнес или голямо предприятие, Lorem Ipsum Web Builder се адаптира към вашите нужди, като ви дава възможност да изградите силно дигитално присъствие.",
           "imageUrl": "https://picsum.photos/id/20/600/500.webp"
         },
         {
           "name": "Lorem Ipsum Cloud Secure",
-          "content": "Store, access, and manage your data with confidence using Lorem Ipsum Cloud Secure. This cloud storage solution offers end-to-end encryption, automatic backups, and customizable storage plans to meet your unique needs. Ideal for businesses of all sizes, it ensures your sensitive information is protected while remaining accessible from anywhere in the world.",
+          "content": "Съхранявайте, достъпвайте и управлявайте данните си с увереност, използвайки Lorem Ipsum Cloud Secure. Това решение за облачно съхранение предлага криптиране от край до край, автоматични резервни копия и персонализирани планове за съхранение, които отговарят на вашите уникални нужди. Идеално за бизнеси от всякакъв мащаб, то гарантира, че вашата чувствителна информация е защитена, като същевременно остава достъпна отвсякъде по света.",
           "imageUrl": "https://picsum.photos/id/36/600/500.webp"
         },
         {
           "name": "Lorem Ipsum Pay Gatewa",
-          "content": "Simplify transactions and enhance customer experience with Lorem Ipsum Pay Gateway, a seamless payment processing system that supports multiple currencies and payment methods. With features like fraud detection, recurring billing, and integration with popular accounting software, Lorem Ipsum Pay Gateway ensures secure and efficient transactions, making it an ideal choice for businesses of all scales.",
+          "content": "Оптимизирайте транзакциите и подобрете клиентското изживяване с Lorem Ipsum Pay Gateway, безпроблемна система за обработка на плащания, която поддържа множество валути и методи на плащане. С функции като разпознаване на измами, периодично фактуриране и интеграция с популярни счетоводни софтуери, Lorem Ipsum Pay Gateway гарантира сигурни и ефективни транзакции, което го прави идеален избор за бизнеси от всякакъв мащаб.",
           "imageUrl": "https://picsum.photos/id/48/600/500.webp"
         },
         {
           "name": "Lorem CyberShield Protect",
-          "content": "Safeguard your business against cyber threats with CyberShield Protect. This all-in-one cybersecurity solution offers advanced threat detection, real-time monitoring, and compliance tools to keep your operations secure. Designed with businesses in mind, CyberShield Protect not only defends against attacks but also educates your team on best practices for maintaining digital safety.",
+          "content": "Защитете бизнеса си от киберзаплахи с CyberShield Protect. Това цялостно решение за киберсигурност предлага усъвършенствано откриване на заплахи, мониторинг в реално време и инструменти за съответствие, за да поддържате операциите си защитени. Създаден с мисъл за бизнесите, CyberShield Protect не само защитава срещу атаки, но и обучава вашия екип относно най-добрите практики за поддържане на цифрова безопасност.",
           "imageUrl": "https://picsum.photos/id/60/600/500.webp"
         }
       ]
     },
     "services": {
-      "name": "Services",
+      "name": "Услуги",
       "servicesList": [
         {
-          "name": "IT Consultancy",
-          "content": "Our IT consultancy service is designed to help businesses navigate the complex world of technology. From evaluating your current systems to creating a roadmap for future growth, our experts provide strategic advice tailored to your goals. Whether you need to optimize processes, reduce costs, or integrate new technologies, we ensure that your IT investments align perfectly with your business objectives."
+          "name": "ИТ консултации",
+          "content": "Нашата услуга за ИТ консултации е създадена, за да помогне на бизнеса да се ориентира в сложния свят на технологиите. От оценка на настоящите ви системи до създаване на план за бъдещо развитие, нашите експерти предоставят стратегически съвети, съобразени с вашите цели. Независимо дали трябва да оптимизирате процесите, да намалите разходите или да интегрирате нови технологии, ние гарантираме, че вашите ИТ инвестиции са в пълно съответствие с вашите бизнес цели."
         },
         {
-          "name": "Custom Software Development",
-          "content": "Every business is unique, and so are its challenges. Our custom software development service delivers solutions that address your specific needs. From designing user-friendly applications to building complex enterprise systems, our team ensures seamless functionality and scalability. We prioritize collaboration, ensuring that your vision is at the core of every project we undertake."
+          "name": "Разработка на персонализиран софтуер",
+          "content": "Всеки бизнес е уникален, както и неговите предизвикателства. Нашата услуга за разработка на персонализиран софтуер предоставя решения, които отговарят на вашите специфични нужди. От проектирането на удобни за потребителите приложения до изграждането на сложни корпоративни системи, нашият екип гарантира безпроблемна функционалност и мащабируемост. Ние поставяме акцент върху сътрудничеството, за да гарантираме, че вашата визия е в основата на всеки проект."
         },
         {
-          "name": "Cybersecurity Audits",
-          "content": "Stay ahead of cyber threats with our comprehensive cybersecurity audits. We thoroughly analyze your IT infrastructure to identify vulnerabilities, recommend robust security measures, and implement solutions to safeguard your data. From compliance assessments to penetration testing, our audits provide peace of mind in an increasingly connected world."
+          "name": "Киберсигурност одити",
+          "content": "Останете една крачка пред киберзаплахите с нашите цялостни одити за киберсигурност. Ние подробно анализираме вашата ИТ инфраструктура, за да идентифицираме уязвимости, препоръчваме надеждни мерки за сигурност и внедряваме решения за защита на вашите данни. От оценки за съответствие до проникващи тестове, нашите одити осигуряват спокойствие в този все по-свързан свят."
         },
         {
-          "name": "Cloud Migration Services",
-          "content": "Transitioning to the cloud doesn’t have to be daunting. Our cloud migration service ensures a smooth, secure, and efficient move from on-premise systems to cloud-based platforms. We handle everything from planning and data migration to testing and optimization, minimizing downtime and maximizing productivity. Post-migration support ensures your business reaps the full benefits of the cloud."
+          "name": "Услуги за миграция в облака",
+          "content": "Преходът към облака не трябва да бъде плашещ. Нашата услуга за миграция в облака гарантира плавно, сигурно и ефективно преминаване от локални системи към облачни платформи. Ние се грижим за всичко - от планирането и преместването на данни до тестването и оптимизацията, минимизирайки прекъсванията и максимизирайки продуктивността. Поддръжката след миграцията гарантира, че вашият бизнес извлича пълните ползи от облака."
         },
         {
-          "name": "Digital Marketing Solutions",
-          "content": "Expand your reach and grow your brand with our end-to-end digital marketing services. From crafting compelling content and managing social media to implementing SEO strategies and running targeted ad campaigns, we help businesses connect with their audience. Our data-driven approach ensures measurable results that drive engagement and conversions."
+          "name": "Решения за дигитален маркетинг",
+          "content": "Разширете обхвата си и развийте марката си с нашите цялостни услуги за дигитален маркетинг. От създаване на ангажиращо съдържание и управление на социални медии до прилагане на SEO стратегии и провеждане на целеви рекламни кампании, ние помагаме на бизнеса да се свърже с аудиторията си. Нашият подход, основан на данни, гарантира измерими резултати, които стимулират ангажираността и реализациите."
         },
         {
-          "name": "24/7 Technical Support",
-          "content": "Your business deserves uninterrupted operations, and our 24/7 technical support ensures just that. Our dedicated team is always on standby to troubleshoot issues, provide guidance, and implement solutions in real-time. Whether it’s software glitches, hardware failures, or network concerns, you can rely on us to keep your systems running smoothly around the clock."
+          "name": "24/7 Техническа поддръжка",
+          "content": "Вашият бизнес заслужава непрекъснати операции, а нашата 24/7 техническа поддръжка осигурява точно това. Нашият отдаден екип е винаги на разположение, за да решава проблеми, предоставя насоки и внедрява решения в реално време. Независимо дали става дума за софтуерни грешки, хардуерни повреди или мрежови проблеми, можете да разчитате на нас да поддържаме вашите системи в изправност денонощно."
         }
       ]
     },
     "team": {
-      "name": "Our Team",
+      "name": "Нашият екип",
       "teamMembers": [
         {
-          "name": "Jessica Rivera",
-          "position": "CEO & Founder",
-          "bio": "Jessica Rivera is the visionary leader behind LoremIpsum. With a Master has degree in Business Administration and over 15 years of experience in technology and innovation, Jessica founded LoremIpsum to bridge the gap between businesses and cutting-edge solutions. She is passionate about fostering a culture of creativity, collaboration, and excellence. Outside of work, Jessica is an avid traveler and a mentor to aspiring entrepreneurs.",
+          "name": "Джесика Ривера",
+          "position": "Главен изпълнителен директор и основател",
+          "bio": "Джесика Ривера е визионерският лидер зад LoremIpsum. С магистърска степен по бизнес администрация и над 15 години опит в технологиите и иновациите, Джесика основава LoremIpsum, за да преодолее пропастта между бизнеса и най-съвременните решения. Тя е страстно отдадена на изграждането на култура на креативност, сътрудничество и съвършенство. Извън работата Джесика обича да пътува и е ментор на амбициозни предприемачи.",
           "imageUrl": "https://picsum.photos/id/64/600/500.webp"
         },
         {
-          "name": "Daniel Lee",
-          "position": "Chief Technology Officer (CTO)",
-          "bio": "Daniel Lee is the technical powerhouse driving LoremIpsum's innovative solutions. With a background in software engineering and extensive experience in AI and cloud computing, Daniel ensures the company stays ahead of technological trends. Known for his analytical mind and problem-solving skills, he’s instrumental in developing products that meet evolving business needs. Daniel is also a dedicated mentor, helping young developers hone their skills.",
+          "name": "Даниел Лий",
+          "position": "Главен технологичен директор (CTO)",
+          "bio": "Даниел Лий е техническият двигател, който задвижва иновативните решения на LoremIpsum. С опит в софтуерното инженерство и богат опит в изкуствения интелект и облачните технологии, Даниел гарантира, че компанията остава начело на технологичните тенденции. Известен с аналитичния си ум и уменията си за решаване на проблеми, той е ключов за разработването на продукти, които отговарят на променящите се нужди на бизнеса. Даниел също е отдаден ментор, който помага на млади разработчици да усъвършенстват своите умения.",
           "imageUrl": "https://picsum.photos/id/433/600/500.webp"
         },
         {
-          "name": "Amara Singh",
-          "position": "Head of Marketing",
-          "bio": "Amara Singh is the creative force behind LoremIpsum's dynamic marketing campaigns. With a decade of experience in digital marketing and brand strategy, she has a knack for connecting businesses with their audiences in meaningful ways. Amara’s innovative approach has led to award-winning campaigns that drive measurable results. When she's not crafting strategies, she enjoys photography and exploring local cuisines.",
+          "name": "Амара Сингх",
+          "position": "Ръководител на маркетинга",
+          "bio": "Амара Сингх е творческата сила зад динамичните маркетингови кампании на LoremIpsum. С десетилетие опит в дигиталния маркетинг и изграждането на брандове, тя има талант за свързване на бизнеса с аудиториите по смислени начини. Иновативният подход на Амара доведе до награждавани кампании, които постигат измерими резултати. Когато не създава стратегии, тя се наслаждава на фотографията и изследва местни кухни.",
           "imageUrl": "https://picsum.photos/id/823/600/500.webp"
         },
         {
-          "name": "James Carter",
+          "name": "Джеймс Картър",
           "position": "Lead Software Developer",
-          "bio": "James Carter has over a decade of experience in software development, specializing in building scalable, user-friendly applications. His expertise spans multiple programming languages, frameworks, and methodologies. James is known for his meticulous attention to detail and commitment to delivering high-quality solutions. A tech enthusiast at heart, he also enjoys contributing to open-source projects and organizing coding bootcamps for the community.",
+          "bio": "Джеймс Картър има над десетилетие опит в разработването на софтуер, специализирайки в изграждането на мащабируеми и удобни за потребителя приложения. Неговата експертиза обхваща множество програмни езици, рамки и методологии. Джеймс е известен с вниманието си към детайлите и ангажираността си към предоставянето на висококачествени решения. Истински ентусиаст по технологии, той също така допринася за отворени проекти и организира обучения по програмиране.",
           "imageUrl": "https://picsum.photos/id/177/600/500.webp"
         },
         {
-          "name": "Elena Ivanov",
-          "position": "Client Success Manager",
-          "bio": "Elena Ivanov is dedicated to ensuring every client’s journey with LoremIpsum is smooth, rewarding, and impactful. With a background in business communication and project management, Elena excels at understanding client needs and delivering tailored solutions. Her empathetic approach and problem-solving skills have made her a trusted advisor to many clients. In her spare time, she volunteers at local charities and enjoys painting.",
+          "name": "Елена Иванова",
+          "position": "Мениджър \"Успех на клиента\"",
+          "bio": "Елена Иванова е посветена на това да осигури гладко, полезно и въздействащо изживяване на всеки клиент на LoremIpsum. С опит в бизнес комуникациите и управлението на проекти, Елена се отличава в разбирането на нуждите на клиентите и предоставянето на персонализирани решения. Нейният емпатичен подход и умения за решаване на проблеми я правят доверен съветник за много клиенти. В свободното си време тя доброволства в местни благотворителни организации и обича да рисува.",
           "imageUrl": "https://picsum.photos/id/832/600/500.webp"
         },
         {
-          "name": "Mohammed Ali",
-          "position": "Cybersecurity Specialist",
-          "bio": "Mohammed Ali is LoremIpsum’s guardian of digital safety. With certifications in ethical hacking and cybersecurity management, Mohammed specializes in protecting businesses against evolving threats. He has a proven track record of fortifying IT infrastructures and ensuring compliance with industry standards. Known for his calm demeanor and quick thinking, Mohammed is the go-to expert in crisis situations. He is also a chess enthusiast and a speaker at cybersecurity conferences.",
+          "name": "Мохамед Али",
+          "position": "Специалист по киберсигурност",
+          "bio": "Мохамед Али е защитникът на цифровата безопасност в LoremIpsum. Със сертификати по етично хакерство и управление на киберсигурността, Мохамед се специализира в защитата на бизнеса от развиващи се заплахи. Той има доказан опит в укрепването на ИТ инфраструктури и осигуряването на съответствие с индустриалните стандарти. Известен със своето спокойствие и бързо мислене, Мохамед е търсен експерт в кризисни ситуации. Той също така е запален шахматист и лектор на конференции за киберсигурност.",
           "imageUrl": "https://picsum.photos/id/349/600/500.webp"
         }
       ]
     },
     "testimonials": {
-      "name": "Testimonials",
+      "name": "Препоръки",
       "testimonialsList": [
         {
-          "testimonial": "\"LoremIpsum transformed our operations with their innovative tools. Their team truly understands our needs and provided solutions that exceeded our expectations. The implementation process was seamless, and we’ve seen remarkable improvements in efficiency and customer engagement.\"",
-          "author": "Sarah Johnson",
-          "position": "CEO of Bright Futures Consulting",
-          "date": "October 5, 2024"
+          "testimonial": "\"LoremIpsum трансформира нашите операции с техните иновативни инструменти. Техният екип наистина разбира нашите нужди и предложи решения, които надминаха нашите очаквания. Процесът на внедряване беше безпроблемен и забелязахме значителни подобрения в ефективността и ангажираността на клиентите.\"",
+          "author": "Сара Джонсън",
+          "position": "Главен изпълнителен директор на Bright Futures Consulting",
+          "date": "5 октомври 2024 г."
         },
         {
-          "testimonial": "\"Partnering with LoremIpsum was one of the best decisions we’ve ever made. Their cloud migration service saved us countless hours of downtime, and their technical support team is always just a call away. It feels like we’ve gained not just a service provider but a true partner.\"",
-          "author": "Mark Peterson",
-          "position": "IT Manager at Green Horizon Tech",
-          "date": "August 12, 2024"
+          "testimonial": "\"PПартньорството с LoremIpsum беше едно от най-добрите решения, които някога сме взимали. Тяхната услуга за миграция в облака ни спести безброй часове престой, а екипът им за техническа поддръжка винаги е само на едно обаждане разстояние. Чувстваме се, сякаш сме спечелили не просто доставчик на услуги, а истински партньор.\"",
+          "author": "Марк Питърсън",
+          "position": "Мениджър ИТ в Green Horizon Tech",
+          "date": "12 август 2024 г."
         },
         {
-          "testimonial": "\"The cybersecurity audit by LoremIpsum identified vulnerabilities we didn’t even know existed. Thanks to their proactive approach and robust solutions, we’ve avoided several potential threats. I highly recommend their services to any company looking to strengthen their digital defenses.\"",
-          "author": "Priya Kapoor",
-          "position": "Operations Director at SecureNow Finance",
-          "date": "July 25, 2024"
+          "testimonial": "\"Одитът за киберсигурност от LoremIpsum идентифицира уязвимости, за които дори не подозирахме. Благодарение на техния проактивен подход и надеждни решения успяхме да избегнем няколко потенциални заплахи. Горещо препоръчвам техните услуги на всяка компания, която иска да укрепи своите цифрови защити.\"",
+          "author": "Прия Капур",
+          "position": "Директор операции в SecureNow Finance",
+          "date": "25 юли 2024 г."
         },
         {
-          "testimonial": "\"I can’t say enough good things about LoremIpsum’s marketing team. Their digital campaigns helped us reach a wider audience and increased our sales by over 30% in just six months. They don’t just deliver results; they understand your vision and bring it to life.\"",
-          "author": "Laura Chen",
-          "position": "COO of Streamline Logistics",
-          "date": "May 3, 2024"
+          "testimonial": "\"Не мога да кажа достатъчно добри неща за маркетинговия екип на LoremIpsum. Техните дигитални кампании ни помогнаха да достигнем до по-широка аудитория и увеличиха продажбите ни с над 30% само за шест месеца. Те не просто постигат резултати, те разбират вашата визия и я реализират.\"",
+          "author": "Том Андерсен",
+          "position": "Основател на Artisan Creations",
+          "date": "8 юни 2024 г."
         },
         {
-          "testimonial": "\"LoremIpsum’s software development team built a custom solution for our logistics business, and the results have been phenomenal. The system is intuitive, reliable, and has significantly reduced our operational bottlenecks. We look forward to working with them again on future projects.\"",
-          "author": "Laura Chen",
-          "position": "CEO of Bright Futures Consulting",
-          "date": "October 5, 2024"
+          "testimonial": "\"Екипът за разработка на софтуер на LoremIpsum създаде персонализирано решение за нашия логистичен бизнес и резултатите са феноменални. Системата е интуитивна, надеждна и значително намали оперативните ни затруднения. Очакваме с нетърпение да работим с тях отново по бъдещи проекти.\"",
+          "author": "Лаура Чен",
+          "position": "Главен оперативен директор на Streamline Logistics",
+          "date": "3 май 2024 г."
         },
         {
-          "testimonial": "\"The tools and insights provided by LoremIpsum’s analytics suite have completely changed how we approach decision-making. Their team is professional, knowledgeable, and genuinely invested in their clients’ success. I highly recommend their services to anyone looking to grow their business.\"",
-          "author": "Carlos Martinez",
-          "position": "General Manager at Urban Roots Retail",
-          "date": "March 15, 2024"
+          "testimonial": "\"Инструментите и прозренията, предоставени от аналитичния пакет на LoremIpsum, напълно промениха начина, по който подхождаме към вземането на решения. Техният екип е професионален, знаещ и наистина ангажиран с успеха на своите клиенти. Горещо препоръчвам техните услуги на всеки, който иска да развива бизнеса си.\"",
+          "author": "Карлос Мартинес",
+          "position": "Генерален мениджър на Urban Roots Retail",
+          "date": "15 март 2024 г."
         }
       ]
     }
