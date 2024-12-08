@@ -37,6 +37,11 @@
   data-bs-scroll="true" tabindex="-1" data-bs-backdrop="false"
   aria-labelledby="navigation-side-menu-label">
   <div class="offcanvas-header">
+    <select id="language-select" class="w-50 form-select language-select" aria-label="Language selector" data-width="fit" onchange="changeLanguage(this)">
+      <option selected="" value=""></option>
+      <option selected="" value=""></option>
+      <option selected="" value=""></option>
+    </select>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex flex-wrap align-content-between">
@@ -47,11 +52,7 @@
         </a>
       </li>
     </ul>
-    <select id="language-select" class="form-select language-select " aria-label="Language selector" data-width="fit" onchange="changeLanguage(this)">
-      <option selected="" value=""></option>
-      <option selected="" value=""></option>
-      <option selected="" value=""></option>
-    </select>
+   
   </div>
 </div>
 <!-- SIDE MENU -->
@@ -150,8 +151,7 @@
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
-      aria-labelledby="productsModalLabel"
-      aria-hidden="true">
+      aria-labelledby="productsModalLabel">
       <div class="modal-dialog modal-fullscreen modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-body-tertiary">
@@ -254,8 +254,7 @@
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
-      aria-labelledby="ourTeamModal"
-      aria-hidden="true">
+      aria-labelledby="ourTeamModal">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header bg-body-tertiary">
@@ -318,7 +317,7 @@
 
     <!-- MODAL TESTIMONIALS -->
     <div id="testimonialsModal" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="testimonialsModalLabel" aria-hidden="true">
+      aria-labelledby="testimonialsModalLabel">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-body-tertiary">
@@ -417,7 +416,7 @@
 </html>
 
 <!-- SPINNER -->
-<div id='spinner' class="d-none align-content-center justify-content-center flex-wrap spinner">
+<div id='spinner' class="d-flex align-content-center justify-content-center flex-wrap spinner">
   <output class="spinner-border d-flex justify-content-center align-content-center flex-wrap"  >
     <output class="spinner-grow spinner-grow-sm" ></output>
   </output>
