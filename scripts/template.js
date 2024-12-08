@@ -1,16 +1,80 @@
 import { constants } from './constants.js'
 
 window.getModalData = getModalData;
-export function generateTemplate(content) {
+export function generateTemplate(chosenLanguage, content) {
+  populateHeader(content);
+  populateSideNavigation(content);
+  populateLanguageSelect(chosenLanguage, content);
   populateSlider(content);
   populateAboutUs(content);
   populateProducts(content);
   populateServices(content);
   populateTeamSection(content);
   populateTestimonials(content);
+  populateContacts(content);
+  populateFooter(content);
   hideSpinner();
 }
 
+//Navbar
+function populateHeader(content) {
+  let title = document.getElementsByTagName(constants.titleId);
+  title[0].innerHTML = content.header.companyName;
+  let logoElement = document.getElementById(constants.logoId);
+  logoElement.src = content.header.logoLink;
+  logoElement.alt = content.header.companyName;
+  let metaTag = document.querySelector(constants.metaTagId)
+  metaTag.content = content.header.companyName;
+}
+
+//Side navigation
+function populateSideNavigation(content) {
+  let sideNavigation = document.querySelector(constants.sideNavigationId);
+  let navigationItemList = sideNavigation.querySelector(constants.navItemId);
+  clearComponents(navigationItemList);
+  let navigationItem = navigationItemList.children[0];
+  let navigationLink = navigationItem.children[0];
+  navigationLink.href = constants.aboutUsNavigationId;
+  navigationLink.innerHTML = content.aboutUs.name.toUpperCase();
+
+  appendNavigationLink(navigationItemList, navigationItem.cloneNode(true), constants.productsNavigationId, content.products.name.toUpperCase());
+  appendNavigationLink(navigationItemList, navigationItem.cloneNode(true), constants.servicesNavigationId, content.services.name.toUpperCase());
+  appendNavigationLink(navigationItemList, navigationItem.cloneNode(true), constants.teamNavigationId, content.team.name.toUpperCase());
+  appendNavigationLink(navigationItemList, navigationItem.cloneNode(true), constants.testimonialsNavigationId, content.testimonials.name.toUpperCase());
+  appendNavigationLink(navigationItemList, navigationItem.cloneNode(true), constants.contactsNavigationId, content.contacts.name.toUpperCase());
+}
+
+function appendNavigationLink(navigationItemList, navigationElement, navigationId, sectionName) {
+  navigationElement.children[0].href = navigationId;
+  navigationElement.children[0].innerHTML = sectionName;
+  navigationItemList.appendChild(navigationElement);
+}
+
+function populateLanguageSelect(chosenLanguage, content) {
+  let languageSelect = document.querySelector(constants.languageSelectId);
+  let firstOption = languageSelect.children[0];
+  firstOption.value = constants.bulgarianLanguage;
+  firstOption.innerHTML = content.languages.bg;
+
+  let secondOption = languageSelect.children[1];
+  secondOption.value = constants.englishLanguage;
+  secondOption.innerHTML = content.languages.en;
+
+  let thirdOption = languageSelect.children[2];
+  thirdOption.value = constants.germanLanguage;
+  thirdOption.innerHTML = content.languages.de;
+
+  for (let index = 0; index < languageSelect.children.length; index++) {
+    let option = languageSelect.children[index];
+
+    if (option.value === chosenLanguage) {
+      languageSelect.selectedIndex = index;
+      break;
+    }
+  }
+}
+
+//Slider
 function populateSlider(content) {
   let carouselSection = document.querySelector(constants.carouselControlsId);
   let slideElements = carouselSection.querySelector(constants.slidesWrapperId);
@@ -31,6 +95,7 @@ function populateSlider(content) {
   }
 }
 
+//About us
 function populateAboutUs(content) {
   let aboutUsComponent = document.querySelector(constants.aboutUsSectionId);
   let aboutUsImageElement = aboutUsComponent.querySelector(constants.aboutUsImageId);
@@ -43,6 +108,7 @@ function populateAboutUs(content) {
   aboutUsBodyElement.innerHTML = content.aboutUs.content;
 }
 
+//Products
 function populateProducts(content) {
   let productsComponents = document.querySelector(constants.productsSectionId);
   let productsTitle = productsComponents.querySelector(constants.productsTitleId);
@@ -76,6 +142,7 @@ function populateProducts(content) {
   }
 }
 
+//Services
 function populateServices(content) {
   let servicesComponent = document.querySelector(constants.servicesSectionId);
   let servicesTitle = servicesComponent.querySelector(constants.servicesTitleId);
@@ -162,6 +229,7 @@ function populateTeamSection(content) {
   }
 }
 
+//Testimonials
 function populateTestimonials(content) {
   let testimonialsSection = document.querySelector(constants.testimonialsSectionId);
   let testimonialsTitle = testimonialsSection.querySelector(constants.testimonialsTitleId);
@@ -193,12 +261,70 @@ function populateTestimonials(content) {
 
 }
 
+//Contacts
+function populateContacts(content) {
+  let contactSection = document.querySelector(constants.contactsSectionId);
+  let contactTitle = contactSection.querySelector(constants.contactsSectionTitleId);
+  contactTitle.innerHTML = content.contacts.name;
+  let nameInput = contactSection.querySelector(constants.inputName);
+  nameInput.children[0].placeholder = content.contacts.fields[0];
+  nameInput.children[1].innerHTML = content.contacts.fields[0];
+  let emailInput = contactSection.querySelector(constants.inputEmail);
+  emailInput.children[0].placeholder = content.contacts.fields[1];
+  emailInput.children[1].innerHTML = content.contacts.fields[1];
+  let phoneInput = contactSection.querySelector(constants.inputPhone);
+  phoneInput.children[0].placeholder = content.contacts.fields[2];
+  phoneInput.children[1].innerHTML = content.contacts.fields[2];
+  let selectInput = contactSection.querySelector(constants.inputSelect);
+  let selectElement = selectInput.children[0];
+  let messageInput = contactSection.querySelector(constants.inputTextArea);
+  messageInput.children[0].placeholder = content.contacts.fields[4];
+  messageInput.children[1].innerHTML = content.contacts.fields[4];
+
+  for (let index = 0; index < content.contacts.topics.length; index++) {
+    selectElement.children[index].value = content.contacts.topics[index];
+    selectElement.children[index].innerHTML = content.contacts.topics[index];
+  }
+
+  selectInput.children[1].innerHTML = content.contacts.fields[3];
+  let phoneNumber = contactSection.querySelector(constants.phoneNumber);
+  phoneNumber.children[0].innerHTML = content.contacts.phoneTitle;
+  phoneNumber.children[1].innerHTML = content.contacts.phoneContent;
+  phoneNumber.children[1].href = `${constants.phoneLinkPrefix}${content.contacts.phoneContent}`;
+  let emailAddress = contactSection.querySelector(constants.emailAddress);
+  emailAddress.children[0].innerHTML = content.contacts.emailTitle;
+  emailAddress.children[1].innerHTML = content.contacts.emailContent;
+  emailAddress.children[1].href = `${constants.mailLinkPrefix}${content.contacts.mailContent}`;
+  let address = contactSection.querySelector(constants.address);
+  address.children[0].innerHTML = content.contacts.addressTitle;
+  address.children[1].innerHTML = content.contacts.addressContent;
+  address.children[1].href = content.contacts.addressCoordinates;
+  let submitButton = contactSection.querySelector(constants.sendButtonId);
+  submitButton.innerHTML = content.contacts.buttonContent;
+}
+
+//Footer
+function populateFooter(content) {
+  let currentYear = new Date().getFullYear();
+  let footerContent = content.footer.content;
+
+  if (currentYear !== constants.yearCreated) {
+    footerContent = footerContent.concat(`<span>${constants.yearCreated} - ${currentYear}</span>`);
+  } else {
+    footerContent = footerContent.concat(`<span>${constants.yearCreated.toString()}</span>`);
+  }
+
+  let footerElement = document.querySelector(constants.footerContentId);
+  footerElement.innerHTML = footerContent;
+}
+
 function clearComponents(parentElement) {
   while (parentElement.children.length > 1) {
     parentElement.removeChild(parentElement.lastChild);
   }
 }
 
+//Spinner
 export function showSpinner() {
   let spinnerElement = document.querySelector(constants.spinnerIdentifier);
   spinnerElement.classList.remove(constants.displayNone);
@@ -207,12 +333,15 @@ export function showSpinner() {
 }
 
 function hideSpinner() {
-  let spinnerElement = document.querySelector(constants.spinnerIdentifier);
-  spinnerElement.classList.add(constants.displayNone);
-  spinnerElement.classList.remove(constants.displayFlex);
-  document.body.classList.remove(constants.noScroll);
+  setTimeout(() => {
+    let spinnerElement = document.querySelector(constants.spinnerIdentifier);
+    spinnerElement.classList.add(constants.displayNone);
+    spinnerElement.classList.remove(constants.displayFlex);
+    document.body.classList.remove(constants.noScroll);
+  }, 100)
 }
 
+//Modals
 function getModalData(eventTarget) {
   let modalId = eventTarget.getAttribute(constants.bsDataTargetAttribute);
   let targetContentLabel = eventTarget.querySelector(constants.contentLabelDataAttribute);
