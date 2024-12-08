@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LoremIpsum Solutions</title>
+  <title>Placeholder</title>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/bootstrap/js/bootstrap.bundle.js"></script>
   <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="LoremIpsum Solutions" />
+  <meta name="apple-mobile-web-app-title" content="Placeholder" />
   <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
@@ -24,7 +24,7 @@
         data-bs-toggle="offcanvas"
         data-bs-target="#navigation-side-menu"
         aria-controls="navigation-side-menu">
-        <img class="header-logo" src="assets/logo/logoipsum.svg" alt="LoremIpsum Solutions">
+        <img id="header-logo" class="header-logo" src="" alt="Placeholder">
       </a>
     </div>
   </nav>
@@ -40,48 +40,17 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body d-flex flex-wrap align-content-between">
-    <ul class="navbar-nav">
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#about-us">
-          About us
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#products-section">
-          Products
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#services">
-          Services
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#our-team">
-          Our team
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#testimonials">
-          Testimonials
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3"
-          href="#contacts">
-          Contacts
+    <ul class="navbar-nav" id='navigation-list'>
+      <li  class="nav-item mb-2">
+        <a class="d-inline-block w-100 text-decoration-none link-secondary link-opacity-50 link-opacity-100-hover fs-3" href="">
+          Placeholder
         </a>
       </li>
     </ul>
-    <select class="form-select" aria-label="Language selector" data-width="fit" onchange="changeLanguage(this)">
-      <option value="en">EN</option>
-      <option value="de">DE</option>
-      <option value="bg">BG</option>
+    <select id="language-select" class="form-select language-select " aria-label="Language selector" data-width="fit" onchange="changeLanguage(this)">
+      <option selected="" value=""></option>
+      <option selected="" value=""></option>
+      <option selected="" value=""></option>
     </select>
   </div>
 </div>
@@ -116,7 +85,7 @@
   </div>
   <!-- CAROUSEL SECTION -->
 
-  <div class="container">
+  <div class="container theme-dark" data-theme="theme-dark">
     <!-- ABOUT US -->
     <div id="about-us" class="pt-5"></div>
     <section id="about-us-section-container" class="about-us-wrapper">
@@ -128,7 +97,7 @@
           <div class="col-12 col-lg-6 col-xl-8">
             <div class="card-body">
               <h1 id="about-us-title" class="card-title">Placeholder</h1>
-              <p id="about-us-body" class="card-text">Placeholder</p>
+              <slot id="about-us-body" class="card-text">Placeholder</slot>
             </div>
           </div>
         </div>
@@ -370,63 +339,63 @@
 
     <!-- CONTRACTS -->
     <div class="pt-5" id="contacts"></div>
-    <section>
+    <section id="contact-section-container">
       <div class="mb-3 mb-md-4 mb-lg-5">
         <div class="mb-3 mb-md-4 mb-md-5">
-          <h1>Message us</h1>
+          <h1 id="contacts-section-title">Placeholder</h1>
         </div>
         <form class="row g-3">
           <div class="col-12 col-md-6 order-1 order-md-0">
             <div class="row g-3">
-              <div class="col-12 col-xl-6 form-floating">
-                <input id="inputName" type="text" class="form-control" placeholder="Name" required>
-                <label for="inputName" class="form-label mx-2">Name:</label>
+              <div id="name-input" class="col-12 col-xl-6 form-floating">
+                <input id="input-name" type="text" class="form-control" placeholder="Placeholder" required>
+                <label for="input-name" class="form-label mx-2">Placeholder</label>
               </div>
-              <div class="col-12 col-xl-6  form-floating">
-                <input id="inputEmail" type="email" class="form-control" placeholder="Email" required>
-                <label for="inputEmail" class="form-label mx-2">Email:</label>
+              <div id="email-input" class="col-12 col-xl-6  form-floating">
+                <input id="input-email" type="email" class="form-control" placeholder="Placeholder" required>
+                <label for="input-email" class="form-label mx-2">Placeholder</label>
               </div>
-              <div class="col-12 col-xl-6  form-floating">
-                <input id="inputPhone" type="text" class="form-control" placeholder="Phone" required>
-                <label for="inputPhone" class="form-label mx-2">Phone:</label>
+              <div id="phone-input" class="col-12 col-xl-6  form-floating">
+                <input id="input-phone" type="text" class="form-control" placeholder="Placeholder" required>
+                <label for="input-phone" class="form-label mx-2">Placeholder</label>
               </div>
-              <div class="col-12 col-xl-6  form-floating">
-                <select id="inputTopic" class="form-select">
-                  <option selected>Please select</option>
-                  <option>Inquiry for a product</option>
-                  <option>Inquiry for a service</option>
-                  <option>Post testimonial</option>
-                  <option>Complaint</option>
-                  <option>Other</option>
+              <div id="select-input" class="col-12 col-xl-6  form-floating">
+                <select id="input-topic" class="form-select">
+                  <option selected>Placeholder</option>
+                  <option>Placeholder</option>
+                  <option>Placeholder</option>
+                  <option>Placeholder</option>
+                  <option>Placeholder</option>
+                  <option>Placeholder</option>
                 </select>
-                <label for="inputTopic" class="form-label mx-2">Topic:</label>
+                <label for="input-topic" class="form-label mx-2">Placeholder</label>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 order-0 order-md-1">
             <ul class="list-group">
-              <li class="list-group-item border-0">
-                <span class="fw-bold">Phone: </span>
-                <a class="text-decoration-none link-secondary" href="tel:+888 888 888">+888 888 888</a>
+              <li id="phone-number" class="list-group-item border-0">
+                <span class="fw-bold">Placeholder</span>
+                <a class="text-decoration-none link-secondary" href="Placeholder">Placeholder</a>
               </li>
-              <li class="list-group-item border-0">
-                <span class="fw-bold">Email: </span>
-                <a class="text-decoration-none link-secondary" href="mailto:loremipsum@loremipsum">loremipsum@loremipsum</a>
+              <li id="email-address" class="list-group-item border-0">
+                <span class="fw-bold">Placeholder</span>
+                <a class="text-decoration-none link-secondary" href="Placeholder">Placeholder</a>
               </li>
-              <li class="list-group-item border-0">
-                <span class="fw-bold">Address: </span>
-                <a class="text-decoration-none link-secondary" href="https://maps.app.goo.gl/WRAX1mHAQMCW1qJG8" target="_blank">
-                  Bulgaria, Ruse, Statue of liberty
+              <li id="address" class="list-group-item border-0">
+                <span class="fw-bold">Placeholder</span>
+                <a class="text-decoration-none link-secondary" href="" target="_blank">
+                  Placeholder
                 </a>
               </li>
             </ul>
           </div>
           <div class="col-12 order-2">
-            <div class="form-floating text-area-height">
-              <textarea id="message" class="form-control h-100" placeholder="Your message:"></textarea>
-              <label for="message" class="mx-2">Your message:</label>
+            <div id="text-area-input" class="form-floating text-area-height">
+              <textarea id="message" class="form-control h-100" placeholder="Placeholder"></textarea>
+              <label for="message" class="mx-2">Placeholder</label>
             </div>
-            <button type="submit" class="btn btn-secondary mt-3">Send message</button>
+            <button id="submit-button" type="submit" class="btn btn-secondary mt-3">Placeholder</button>
           </div>
         </form>
       </div>
@@ -439,18 +408,14 @@
 <!-- FOOTER -->
 <footer>
   <div class="container-fluid d-flex justify-content-center w-100 bg-light border-top fixed-bottom">
-    <p class="my-3 text-secondary">
-      Created by
-      <a href="https://www.linkedin.com/in/georgi-brankovanov/" target="_blank" class="text-decoration-none link-secondary fw-bold">
-        Georgi Brankovanov
-      </a>
-      -
-      <span>2024</span>
+    <p id="footer-wrapper" class="my-3 text-secondary">
+      Placeholder
     </p>
   </div>
 </footer>
 <!-- FOOTER -->
 </html>
+
 <!-- SPINNER -->
 <div id='spinner' class="d-none align-content-center justify-content-center flex-wrap spinner">
   <output class="spinner-border d-flex justify-content-center align-content-center flex-wrap"  >
@@ -458,4 +423,5 @@
   </output>
 </div>
 <!-- SPINNER -->
+
 <script type="module"  src="scripts/main.js"></script>
