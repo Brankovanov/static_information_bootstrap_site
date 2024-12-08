@@ -21,10 +21,12 @@ export async function readContent(chosenLanguage) {
 
 async function changeLanguage(lang) {
   showSpinner();
-  document.querySelector(constants.sideNavigationIdentifier).classList.remove(constants.show);
+  let sideNavigation = document.querySelector(constants.sideNavigationIdentifier);
+  const bsOffcanvas = bootstrap.Offcanvas.getInstance(sideNavigation) || new bootstrap.Offcanvas(sideNavigation);
+  bsOffcanvas.hide();
   let chosenLanguage = lang.value;
   let content = await readContent(chosenLanguage);
   setCookie(constants.cookieTypes.language, chosenLanguage);
-  generateTemplate(content);
+  generateTemplate(lang, content);
 }
 
