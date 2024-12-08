@@ -1,0 +1,10 @@
+.carousel-wrapper {
+  height: 75vh;
+  min-height: 500px;
+  margin-top: 60px;
+
+  @media (max-width: 767px) {
+    height: 0;
+    min-height: unset;
+  }
+}
